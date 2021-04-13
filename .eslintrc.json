@@ -4,6 +4,11 @@
     "es6": true
   },
   "extends": "airbnb",
+  "globals": {
+    "describe": false,
+    "expect": false,
+    "it": false
+  },
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
