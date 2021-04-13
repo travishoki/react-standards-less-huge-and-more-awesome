@@ -1,15 +1,12 @@
 import React from 'react';
 
-import './App.css';
+import ComponentB from './components/ComponentB';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        Hoki was here
-      </header>
-    </div>
-  );
-}
+const App = () => (
+  <div className="App">
+    <ComponentB.Before />
+    <ComponentB.After />
+  </div>
+);
 
 export default App;
