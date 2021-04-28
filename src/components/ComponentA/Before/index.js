@@ -9,15 +9,17 @@ export const Wrapper = styled.div`
   padding: 10px;
 `;
 
-export function toUpperCase(str) {
-  return str.toUpperCase();
-}
+const ComponentA = () => {
+  function toUpperCase(str) {
+    return str.toUpperCase();
+  }
 
-const ComponentA = () => (
-  <Wrapper>
-    {toUpperCase('Component A')}
-  </Wrapper>
-);
+  return (
+    <Wrapper>
+      {toUpperCase('Component A')}
+    </Wrapper>
+  );
+};
 
 function mapStateToProps() {
   return {};
