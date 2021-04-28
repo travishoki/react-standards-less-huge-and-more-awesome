@@ -2,6 +2,7 @@ import React from 'react';
 
 import ComponentA from './components/ComponentA';
 import ComponentB from './components/ComponentB';
+import ComponentC from './components/ComponentC';
 
 const App = () => (
   <div className="App">
@@ -16,6 +17,8 @@ const App = () => (
       <ComponentA.After />
     </section>
 
+    <hr />
+
     <section>
       <h2>Component B</h2>
       <p>Breakout Sub Components</p>
@@ -25,6 +28,19 @@ const App = () => (
 
       <h3>After</h3>
       <ComponentB.After />
+    </section>
+
+    <hr />
+
+    <section>
+      <h2>Component C</h2>
+      <p>Seperation of Concerns</p>
+
+      <h3>Before</h3>
+      <ComponentC.Before />
+
+      <h3>After</h3>
+      <ComponentC.After />
     </section>
   </div>
 );
