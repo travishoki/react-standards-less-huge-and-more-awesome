@@ -5,19 +5,27 @@ import ComponentB from './components/ComponentB';
 
 const App = () => (
   <div className="App">
-    <h2>Component A</h2>
-    <p>Breakout Files</p>
-    <p>Before</p>
-    <ComponentA.Before />
-    <p>After</p>
-    <ComponentA.After />
+    <section>
+      <h2>Component A</h2>
+      <p>Breakout Files</p>
 
-    <h2>Component B</h2>
-    <p>Breakout Sub Components</p>
-    <p>Before</p>
-    <ComponentB.Before />
-    <p>After</p>
-    <ComponentB.After />
+      <h3>Before</h3>
+      <ComponentA.Before />
+
+      <h3>After</h3>
+      <ComponentA.After />
+    </section>
+
+    <section>
+      <h2>Component B</h2>
+      <p>Breakout Sub Components</p>
+
+      <h3>Before</h3>
+      <ComponentB.Before />
+
+      <h3>After</h3>
+      <ComponentB.After />
+    </section>
   </div>
 );
 
