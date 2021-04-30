@@ -8,6 +8,7 @@ import SelectField from './SelectField';
 const ComponentC = () => (
   <div>
     <ButtonField />
+    <br />
     <SelectField />
   </div>
 );

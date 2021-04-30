@@ -38,6 +38,8 @@ const ComponentD = ({
         {isButtonActive ? 'Active' : 'Inactive'}
       </button>
 
+      <br />
+
       <select
         value={optionValue}
         onChange={handleSelectionChange}
