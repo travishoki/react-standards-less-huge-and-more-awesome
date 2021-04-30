@@ -15,16 +15,16 @@ function renderList(itemList) {
 /* ---------- BEFORE ---------- */
 
 const ComponentB = () => {
-  const [itemList, setItemList] = useState([]);
+  const [items, setItems] = useState([]);
 
   useEffect(() => {
     getItemList()
       .then((result) => {
-        setItemList(result);
+        setItems(result);
       });
   });
 
-  const list = renderList(itemList);
+  const list = renderList(items);
 
   return (
     <div>
