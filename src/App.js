@@ -14,6 +14,8 @@ import ComponentDBefore from './components/ComponentD/Before';
 
 const App = () => (
   <div className="App">
+    <h1>React Standards - Less Huge and More Awesome</h1>
+
     <section>
       <h2>Component A</h2>
       <p>Breakout Files</p>
