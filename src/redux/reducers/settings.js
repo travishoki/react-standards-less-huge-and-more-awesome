@@ -1,15 +1,22 @@
-import { SET_SETTINGS } from '../../constants/action-types';
+import { SET_IS_BUTTON_ACTIVE, SET_OPTION_VALUE } from '../../constants/action-types';
 
 const defaultState = {
-  settings: {},
+  isButtonActive: false,
+  optionValue: 'a',
 };
 
-function basicReducer(state = defaultState, action) {
+function settings(state = defaultState, action) {
   switch (action.type) {
-    case SET_SETTINGS:
+    case SET_IS_BUTTON_ACTIVE:
       return {
         ...state,
-        settings: action.settings,
+        isButtonActive: action.isButtonActive,
+      };
+
+    case SET_OPTION_VALUE:
+      return {
+        ...state,
+        optionValue: action.optionValue,
       };
 
     default:
@@ -17,4 +24,4 @@ function basicReducer(state = defaultState, action) {
   }
 }
 
-export default basicReducer;
+export default settings;

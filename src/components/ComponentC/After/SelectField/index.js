@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
 
 const SelectField = () => {
-  const [selectValue, setSelectValue] = useState('a');
+  const [optionValue, setOptionValue] = useState('a');
 
   const handleSelectionChange = (event) => {
     const { value } = event.target;
-    setSelectValue(value);
+    setOptionValue(value);
   };
 
   return (
     <select
-      value={selectValue}
+      value={optionValue}
       onChange={handleSelectionChange}
     >
       <option value="a">Option A</option>

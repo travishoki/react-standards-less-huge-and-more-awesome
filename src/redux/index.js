@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux';
 
-import basicReducer from './reducers/settings';
+import settings from './reducers/settings';
 
 const rootReducer = combineReducers({
-  basicReducer,
+  settings,
 });
 
 export default rootReducer;

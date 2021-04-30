@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 const ComponentC = () => {
   const [isButtonActive, setIsButtonActive] = useState(false);
-  const [selectValue, setSelectValue] = useState('a');
+  const [optionValue, setOptionValue] = useState('a');
 
   const handleButtonClick = () => {
     setIsButtonActive(!isButtonActive);
@@ -10,7 +10,7 @@ const ComponentC = () => {
 
   const handleSelectionChange = (event) => {
     const { value } = event.target;
-    setSelectValue(value);
+    setOptionValue(value);
   };
 
   return (
@@ -25,7 +25,7 @@ const ComponentC = () => {
       </button>
 
       <select
-        value={selectValue}
+        value={optionValue}
         onChange={handleSelectionChange}
       >
         <option value="a">Option A</option>

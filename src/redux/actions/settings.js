@@ -1,10 +1,11 @@
-import { SET_SETTINGS } from '../../constants/action-types';
+import { SET_IS_BUTTON_ACTIVE, SET_OPTION_VALUE } from '../../constants/action-types';
 
-export function setSettings(settings) {
-    return (dispatch) => {
-      dispatch({
-        type: SET_SETTINGS,
-        settings,
-      });
-    };
-  }
+export const setIsButtonActive = (isButtonActive) => ({
+  type: SET_IS_BUTTON_ACTIVE,
+  isButtonActive,
+});
+
+export const setOptionValue = (optionValue) => ({
+  type: SET_OPTION_VALUE,
+  optionValue,
+});

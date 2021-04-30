@@ -1,5 +1,2 @@
-export const SET_SETTINGS = 'SET_SETTINGS';
-
-export default {
-  SET_SETTINGS,
-};
+export const SET_IS_BUTTON_ACTIVE = 'SET_IS_BUTTON_ACTIVE';
+export const SET_OPTION_VALUE = 'SET_OPTION_VALUE';
