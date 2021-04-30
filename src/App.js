@@ -23,6 +23,9 @@ const App = () => (
 
       <h3>After</h3>
       <ComponentAAfter />
+
+      <h3>Bad Example</h3>
+      <p>src/components/availability/availability.jsx</p>
     </section>
 
     <hr />
@@ -36,6 +39,9 @@ const App = () => (
 
       <h3>After</h3>
       <ComponentBAfter />
+
+      <h3>Bad Example</h3>
+      <p>src/components/dashboard/setupInfo.js</p>
     </section>
 
     <hr />
