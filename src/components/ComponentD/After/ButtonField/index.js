@@ -1,37 +1,9 @@
-import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import PropTypes from 'prop-types';
 
-import {
-  getIsButtonActive,
-} from '../../../../redux/selectors/settings';
+import ButtonField from './ButtonField';
+import { getIsButtonActive } from '../../../../redux/selectors/settings';
 import * as reduxActions from '../../../../redux/actions/settings';
-
-const ButtonField = ({
-  isButtonActive,
-  setIsButtonActive,
-}) => {
-  const handleButtonClick = () => {
-    setIsButtonActive(!isButtonActive);
-  };
-
-  return (
-    <button
-      onClick={handleButtonClick}
-      type="button"
-    >
-      Toggle
-      {' '}
-      {isButtonActive ? 'Active' : 'Inactive'}
-    </button>
-  );
-};
-
-ButtonField.propTypes = {
-  isButtonActive: PropTypes.arrayOf.isRequired,
-  setIsButtonActive: PropTypes.func.isRequired,
-};
 
 function mapStateToProps(state) {
   return {

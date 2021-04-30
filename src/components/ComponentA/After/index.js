@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
-import ComponentA from './view';
+import ComponentA from './ComponentA';
 
 function mapStateToProps() {
   return {};
