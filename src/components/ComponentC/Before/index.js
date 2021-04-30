@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+/* ---------- BEFORE ---------- */
+
 const ComponentC = () => {
   const [isButtonActive, setIsButtonActive] = useState(false);
   const [optionValue, setOptionValue] = useState('a');

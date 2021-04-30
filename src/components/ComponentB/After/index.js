@@ -3,6 +3,8 @@ import React, { useEffect, useState } from 'react';
 import List from './List';
 import { getItemList } from '../../../api';
 
+/* ---------- AFTER ---------- */
+
 const ComponentB = () => {
   const [items, setItems] = useState([]);
 

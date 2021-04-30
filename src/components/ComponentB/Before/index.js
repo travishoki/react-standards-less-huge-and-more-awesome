@@ -12,6 +12,8 @@ function renderList(itemList) {
   return itemList.map((item) => renderListItem(item));
 }
 
+/* ---------- BEFORE ---------- */
+
 const ComponentB = () => {
   const [itemList, setItemList] = useState([]);
 

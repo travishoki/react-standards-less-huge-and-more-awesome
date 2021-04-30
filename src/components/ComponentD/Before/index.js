@@ -9,6 +9,8 @@ import {
 } from '../../../redux/selectors/settings';
 import * as reduxActions from '../../../redux/actions/settings';
 
+/* ---------- BEFORE ---------- */
+
 const ComponentD = ({
   isButtonActive,
   optionValue,

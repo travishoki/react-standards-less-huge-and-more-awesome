@@ -9,6 +9,8 @@ export const Wrapper = styled.div`
   padding: 10px;
 `;
 
+/* ---------- BEFORE ---------- */
+
 const ComponentA = () => {
   function toUpperCase(str) {
     return str.toUpperCase();
