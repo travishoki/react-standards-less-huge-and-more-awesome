@@ -1,9 +1,16 @@
 import React from 'react';
 
-import ComponentA from './components/ComponentA';
-import ComponentB from './components/ComponentB';
-import ComponentC from './components/ComponentC';
-import ComponentD from './components/ComponentD';
+import ComponentAAfter from './components/ComponentA/After';
+import ComponentABefore from './components/ComponentA/Before';
+
+import ComponentBAfter from './components/ComponentB/After';
+import ComponentBBefore from './components/ComponentB/Before';
+
+import ComponentCAfter from './components/ComponentC/After';
+import ComponentCBefore from './components/ComponentC/Before';
+
+import ComponentDAfter from './components/ComponentD/After';
+import ComponentDBefore from './components/ComponentD/Before';
 
 const App = () => (
   <div className="App">
@@ -12,10 +19,10 @@ const App = () => (
       <p>Breakout Files</p>
 
       <h3>Before</h3>
-      <ComponentA.Before />
+      <ComponentABefore />
 
       <h3>After</h3>
-      <ComponentA.After />
+      <ComponentAAfter />
     </section>
 
     <hr />
@@ -25,10 +32,10 @@ const App = () => (
       <p>Sub Components vs Render Functions </p>
 
       <h3>Before</h3>
-      <ComponentB.Before />
+      <ComponentBBefore />
 
       <h3>After</h3>
-      <ComponentB.After />
+      <ComponentBAfter />
     </section>
 
     <hr />
@@ -38,10 +45,10 @@ const App = () => (
       <p>Sub Components - Statefull Components</p>
 
       <h3>Before</h3>
-      <ComponentC.Before />
+      <ComponentCBefore />
 
       <h3>After</h3>
-      <ComponentC.After />
+      <ComponentCAfter />
     </section>
 
     <hr />
@@ -51,10 +58,10 @@ const App = () => (
       <p>Sub Components - Connected Components</p>
 
       <h3>Before</h3>
-      <ComponentD.Before />
+      <ComponentDBefore />
 
       <h3>After</h3>
-      <ComponentD.After />
+      <ComponentDAfter />
     </section>
   </div>
 );
